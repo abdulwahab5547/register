@@ -1,0 +1,28 @@
+/* Register */
+
+
+.register{
+  background-color: #3C9AE2;
+  height: 100vh;
+}
+
+.register-inner{
+  height: 30vh;
+  width: 25vw;
+  background-color: #E8616C;
+  border-radius: 20px;
+}
+
+.input-container input{
+  border-radius: 10px;
+  border: 2px solid #bf1c2a;
+  font-family:monospace;
+}
+
+.submit{
+  border-radius: 8px;
+  color: white;
+  font-family:monospace;
+  border: none;
+  background-color: #0472c6;
+}

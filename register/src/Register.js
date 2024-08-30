@@ -4,7 +4,7 @@ function Register(){
     const [message, setMessage] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:8000/data')
+    fetch('http://register-backend-lac.vercel.app/data')
       .then(response => response.json())
       .then(data => {
         // Set the message state with the response data

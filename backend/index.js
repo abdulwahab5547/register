@@ -12,7 +12,13 @@ dotenv.config();
 import cors from 'cors';
 
 // Enable CORS for all origins
-app.use(cors());
+const corsOptions = {
+  origin: 'https://register-blush.vercel.app', // Replace with your frontend's URL
+  methods: 'GET,POST,PUT,DELETE',
+  allowedHeaders: 'Content-Type,Authorization'
+};
+
+app.use(cors(corsOptions));
 
 app.get('/data', (req, res) => {
     res.json({ message: 'Backend connected properly.' });
